@@ -1,0 +1,37 @@
+---
+title: "Data Scientist's Toolbox"
+author: "slowLearner"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Course Project
+
+### Purpose
+
+To demonstrate that I have the basic toolbox properly installed and working on my machine.
+This document itself also demonstrates the use of the installed rmarkdown package.
+
+### Details
+##### R is installed:  
+```{r}
+sessionInfo()
+```
+##### Git is installed:
+```{r}
+x <- system('git --version', intern=TRUE)
+print(x)
+```
+##### RStudio is installed.
+
+I wanted to use inline command `RStudio.Version()` here but it does not work because when you `knit` a .Rmd file, it happens in a separate R session outside of RStudio.
+
+> <font size=2>*"This is as intended; documents are knitted in a clean, separate R session outside of the main RStudio session. If you need to knit in your main R session"* See <https://github.com/rstudio/rstudio/issues/6892></font>
+
+4. I have a GitHub account (obviously ;-).
+
+---
